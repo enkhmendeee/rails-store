@@ -18,4 +18,6 @@ Rails.application.routes.draw do
     resources :subscribers, only: [ :create ]
   end
   resource :unsubscribe, only: [ :show ]
+  resource :sign_up
+
 end
