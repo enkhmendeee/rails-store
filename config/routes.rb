@@ -21,7 +21,9 @@ Rails.application.routes.draw do
   resource :sign_up
   namespace :settings do
     resource :password, only: [ :show, :update ]
-    resource :profile, only: [ :show ]
+    resource :profile, only: [ :show, :update ]
+
+    root to: redirect("/settings/profile")
   end
 
 end
