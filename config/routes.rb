@@ -19,5 +19,9 @@ Rails.application.routes.draw do
   end
   resource :unsubscribe, only: [ :show ]
   resource :sign_up
+  namespace :settings do
+    resource :password, only: [ :show, :update ]
+    resource :profile, only: [ :show ]
+  end
 
 end
