@@ -35,3 +35,10 @@ en:
       user:
         password_challenge: "Current password"
 
+
+  store:
+    products:
+      index:
+        title: "Products"
+
+
