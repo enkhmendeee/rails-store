@@ -68,4 +68,4 @@ end
 # Pin json below 3.x: ActiveSupport::JSON.decode (Rails 8.1) calls
 # JSON.parse(json, options) with a positional options hash, which json 3.0
 # no longer accepts, breaking encrypted cookie/session decryption.
-gem "json", "< 3"
+gem "json", "< 4"
